@@ -1,33 +1,132 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Zouwu</title>
+    <title>Zouwu | Travel</title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link href="style.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+    />
+    <link href="./assets/css/style.css" rel="stylesheet" />
   </head>
   <body>
-    <div class="container">
-      <nav class="navbar">
-        <h1 class="brand">
-          <a href="#">Zouwu</a>
-        </h1>
-        <ul>
-          <li>
-            <a href="#">Home</a>
-          </li>
-          <li>
-            <a href="#">About</a>
-          </li>
-          <li>
-            <a href="#">Our Packages</a>
-          </li>
-          <li>
-            <a href="#">Contact</a>
-          </li>
-        </ul>
-      </nav>
-    </div>
+    <header>
+      <section class="navbar">
+        <div class="container">
+          <nav>
+            <div class="brand">
+              <h1>Zouwu</h1>
+            </div>
+            <div class="nav-items menu-nav">
+              <ul>
+                <li>
+                  <a href="#home">Home</a>
+                </li>
+                <li>
+                  <a href="#about">About</a>
+                </li>
+                <li>
+                  <a href="#packages">Packages</a>
+                </li>
+                <li>
+                  <a href="#contact">Contact</a>
+                </li>
+              </ul>
+            </div>
+            <div class="icon menu-bar">
+              <i class="fas fa-bars" style="color: white"></i>
+            </div>
+          </nav>
+        </div>
+      </section>
+      <section class="hero" id="home">
+        <h1>Your Trusted Travel Agent</h1>
+      </section>
+    </header>
+
+    <section class="about" id="about">
+      <div class="container">
+        <div class="about-items">
+          <div class="items">
+            <h2>About Zouwu Travel Agency</h2>
+            <p>
+              Zouwu is a leading travel agency that specializes in providing
+              memorable travel experiences for individuals, families, and
+              groups. With years of experience in the industry, we have built a
+              reputation for excellence, reliability, and personalized service.
+            </p>
+            <p>
+              Our team of experienced travel agents are passionate about helping
+              our clients plan their dream vacations, and we work closely with
+              them to create custom travel itineraries that suit their
+              preferences, interests, and budget.
+            </p>
+            <p>
+              At Zouwu, we offer a wide range of travel services, including
+              flights, accommodation, transportation, tours, and activities. We
+              partner with the best travel suppliers and vendors to ensure that
+              our clients receive the highest quality service and value for
+              their money.
+            </p>
+            <p>
+              Whether you're planning a romantic getaway, a family vacation, or
+              an adventure-filled trip, Zouwu has you covered. Contact us today
+              to start planning your next travel adventure!
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="packages" id="packages">
+      <div class="container">
+        <div class="packages-item">
+          <div class="item-1">
+            <h1>Norway</h1>
+            <p>Go To Norway Now!</p>
+            <button>Buy Now</button>
+          </div>
+        </div>
+        <div class="packages-item">
+          <div class="item-2">
+            <h1>Iceland</h1>
+            <p>Go To Iceland Now!</p>
+            <button>Buy Now</button>
+          </div>
+        </div>
+        <div class="packages-item">
+          <div class="item-3">
+            <h1>Sweden</h1>
+            <p>Go To Sweden Now!</p>
+            <button>Buy Now</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="contact" id="contact">
+      <div class="container">
+        <h2>Contact Us</h2>
+        <p>
+          Get in touch with us for any inquiries or to book your next vacation.
+        </p>
+        <form>
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required />
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required />
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" required></textarea>
+          <button type="submit" class="btn">Submit</button>
+        </form>
+      </div>
+    </section>
+    <footer style="background-color: #222">
+      <div class="termBox">
+        <p>Terms of Service</p>
+        <p>Privacy Policy</p>
+      </div>
+      <p id="copyright">© 2023 Faza Zikri</p>
+    </footer>
+    <script src="./assets/js/script.js"></script>
   </body>
-  <script src="script.js"></script>
 </html>
